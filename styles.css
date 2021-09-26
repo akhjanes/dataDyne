@@ -23,13 +23,13 @@ All */
 body.index{
     background: linear-gradient(rgba(133, 132, 132, 0.01),#6b6a6a), url(images/main-background.jpg); 
     background-size: cover;
-    background-position: center;
+    background-position: absolute;
     height:100vh;
 }
 body.k7body{
     background: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
     background-size: cover;
-    background-position: center;
+    background-position: absolute;
     height:100vh;
 }
 div#k7-avenger-render{
@@ -63,7 +63,8 @@ body.sapients{
 .mainnavbar{
     display:flex;
     color: white;
-    justify-content: space-between;
+    justify-content:space-evenly;
+    padding:5px;
     align-items:center;
     background-color:black;
     background: linear-gradient(rgba(255, 255, 255, 1.5),#090514);
@@ -91,7 +92,6 @@ body.sapients{
 
 #company-slogan{
     font-size: 21px;
-    margin-bottom: 10px;
     background: linear-gradient(rgb(69, 128, 67),#fdfdfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -109,7 +109,6 @@ body.sapients{
 
 #company-slogan-k7{
     font-size: 21px;
-    margin-bottom: 10px;
     background: linear-gradient(rgb(23, 160, 179),#fdfdfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -178,7 +177,15 @@ in a row. */
         display:flex;
     }
     .mainnavbar {
-        flex-direction:column; 
+        flex-direction:column;
+        
+    
+    }
+    .mainnavbar{
+        display:flex;
+        color: white;
+        justify-content:left;
+        align-items:center;
     }
     .navlinks {
         display:none;
@@ -198,7 +205,9 @@ in a row. */
     .navlinks.active{
         display:flex;
     }
-    
+    #company-logo{
+        display:none;
+    }
 }
 
 
