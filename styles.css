@@ -10,15 +10,21 @@ All */
 
 * {
     box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Gemunu Libre', sans-serif;
 }
+
 
 /* Header */
 
 /* Body */
 
 body{
-    margin:0;
-    padding:0;
+    background: linear-gradient(rgba(0,0,0,0.2),#000000), url(images/main-background.jpg); 
+    background-size: cover;
+    background-position: center;
+    height:100vh;
 }
 
 /* Navigation Bar */
@@ -28,19 +34,50 @@ body{
     display: flex;
     color: white;
     justify-content: space-between;
-    background-color: rgb(30, 30, 30);
-    align-items: center;
-    box-shadow: 3px 3px 10px 10px black;
+    align-items:center;
+    background-color:black;
+    background: linear-gradient(rgba(255, 255, 255, 1.5),#090514);
+    background: linear-gradient(rgb(149, 147, 155),#000000);
+    box-shadow:black 1px 1px 1px 1px;
 }
 
-/* Navigtion Bar Company Name */
-#company-name {
-    font-size: 1.5rem;
-    margin: 10rem;
+/* Navigtion Bar Company Name "dataDyne" */
+.company-name {
+    margin: 1rem;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: linear-gradient(rgba(155, 255, 255, 0.3),#ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
 }
 
 
 /* Navigation Bar Links  */
+
+.navlinks ul{
+    margin:0;
+    padding:0;
+    display:flex;
+}
+
+.navlinks li{
+    list-style:none;
+}
+
+.navlinks li a{
+    text-decoration:none;
+    color:white;
+    display:block;
+    padding:1rem;
+    
+}
+
+.navlinks li:hover {
+    background-color: gray;
+}
+
+
 
 
 /*  */
