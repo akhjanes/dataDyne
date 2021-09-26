@@ -20,18 +20,48 @@ All */
 
 /* Body */
 
-body{
-    background: linear-gradient(rgba(0,0,0,0.2),#000000), url(images/main-background.jpg); 
+body.index{
+    background: linear-gradient(rgba(133, 132, 132, 0.01),#6b6a6a), url(images/main-background.jpg); 
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+body.k7body{
+    background: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+div#k7-avenger-render{
+    margin-left:500px;
+    margin-top:250px;
+    content:url(images/k7avenger.png);
+    width:500px;
+    border-radius:10px;
+    border:5px rgb(26, 26, 26) solid;
+    
+}
+}
+body.shielding{
+    background: linear-gradient(rgba(179, 179, 179, 0.2),#080101), url(images/G5.jpg); 
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+}
+body.sapients{
+    background: linear-gradient(rgba(58, 58, 58, 0.2),#131313), url(images/cassandra.jpg); 
     background-size: cover;
     background-position: center;
     height:100vh;
 }
 
+
 /* Navigation Bar */
 
 /* Main Nav Bar Parent */
+
 .mainnavbar{
-    display: flex;
+    display:flex;
     color: white;
     justify-content: space-between;
     align-items:center;
@@ -41,7 +71,13 @@ body{
     box-shadow:black 1px 1px 1px 1px;
 }
 
-/* Navigtion Bar Company Name "dataDyne" */
+/* Navigtion Bar Company Name "dataDyne" +*/
+#company-logo{
+    content:url(images/mainLogo.png);
+    width:120px;
+    height:120px;    
+}
+
 .company-name{
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
@@ -57,6 +93,24 @@ body{
     font-size: 21px;
     margin-bottom: 10px;
     background: linear-gradient(rgb(69, 128, 67),#fdfdfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.company-name-k7{
+    margin: 1rem;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: linear-gradient(rgba(197, 197, 197, 0.3),#6497a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+
+
+#company-slogan-k7{
+    font-size: 21px;
+    margin-bottom: 10px;
+    background: linear-gradient(rgb(23, 160, 179),#fdfdfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
@@ -112,9 +166,8 @@ body{
     width:100;
     background-color:white;
     border-radius:5px;
-    
-
 }
+
 /* Media Query to hide/unhide mobile hamburger button and the navigation bar. Also
 adjusts the navigation bar and the list to stack vertically in a column instead of
 in a row. */
@@ -144,13 +197,12 @@ in a row. */
     }
     .navlinks.active{
         display:flex;
-        
-        
     }
+    
 }
 
 
-/*  */
+/* k7.html Styles */
 /*  */
 /*  */
 /*  */
