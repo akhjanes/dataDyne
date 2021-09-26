@@ -1,0 +1,63 @@
+
+/*Imported Fonts so I don't forget the css for them
+
+font-family: 'Gemunu Libre', sans-serif;
+font-family: 'Stick No Bills', sans-serif;
+
+
+
+All */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+
+/* Body */
+
+body{
+    margin:0;
+    padding:0;
+}
+
+/* Navigation Bar */
+
+/* Main Nav Bar Parent */
+.mainnavbar {
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    background-color: rgb(30, 30, 30);
+    align-items: center;
+    box-shadow: 3px 3px 10px 10px black;
+}
+
+/* Navigtion Bar Company Name */
+#company-name {
+    font-size: 1.5rem;
+    margin: 10rem;
+}
+
+
+/* Navigation Bar Links  */
+
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
