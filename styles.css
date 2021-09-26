@@ -30,7 +30,7 @@ body{
 /* Navigation Bar */
 
 /* Main Nav Bar Parent */
-.mainnavbar {
+.mainnavbar{
     display: flex;
     color: white;
     justify-content: space-between;
@@ -42,7 +42,7 @@ body{
 }
 
 /* Navigtion Bar Company Name "dataDyne" */
-.company-name {
+.company-name{
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
     font-weight: bold;
@@ -59,6 +59,7 @@ body{
     margin:0;
     padding:0;
     display:flex;
+    
 }
 
 .navlinks li{
@@ -72,11 +73,56 @@ body{
     padding:1rem;
     
 }
+/* Navigation Links Animations  */
 
-.navlinks li:hover {
+.navlinks li:hover{
     background-color: gray;
+    background: linear-gradient(rgb(149, 147, 155),#000000);
+    border-radius:8px;
+    
+    
+}
+/* The idea here is to hide the hamburger when the screen size is large enough, I could use
+a class here but I might want to animate the individual bars later on */
+.hamburger{
+    position:absolute;
+    top:.50rem;
+    right:1rem;
+    flex-direction:column;
+    display:none;
+    justify-content:space-between;
+    width: 35px;
+    height: 21px;
 }
 
+#topbun{
+    height:3px;
+    width:75%;
+    background-color:white;
+    border-radius:15px;
+    
+}
+#lettuce{
+    height:3px;
+    width:75%;
+    background-color:white;
+    border-radius:15px;
+    
+}
+#meatncheese{
+    height:3px;
+    width:75%;
+    background-color:white;
+    border-radius:15px;
+    
+}
+#bottombun{
+    height:3px;
+    width:75%;
+    background-color:white;
+    border-radius:15px;
+    
+}
 
 
 
