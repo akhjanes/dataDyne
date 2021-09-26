@@ -51,6 +51,8 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
+
+
 #company-slogan{
     font-size: 21px;
     margin-bottom: 10px;
@@ -74,22 +76,26 @@ body{
 
 .navlinks li a{
     text-decoration:none;
-    color:white;
+    color:rgb(230, 230, 230);
     display:block;
     padding:1rem;
+    
     
 }
 /* Navigation Links Animations  */
 
-.navlinks li:hover{
-    background-color: gray;
-    background: linear-gradient(rgb(149, 147, 155),#000000);
-    border-radius:8px;
-    
+}
+.navlinks {
+    cursor:pointer;
+}
+.navlinks li a{
+    transition: all 0.5s ease 0s;
+}
+.navlinks li a:hover {
+    color:black;
     
 }
-/* The idea here is to hide the hamburger when the screen size is large enough, I could use
-a class here but I might want to animate the individual bars later on */
+/* The idea here is to hide the hamburger when the screen size is large enough*/
 .hamburger{
     position:absolute;
     top:2rem;
@@ -101,50 +107,46 @@ a class here but I might want to animate the individual bars later on */
     height: 25px;
 }
 
-#topbun{
+.lines{
     height:2px;
     width:100;
     background-color:white;
     border-radius:5px;
     
-}
-#lettuce{
-    height:2px;
-    width:100;
-    background-color:white;
-    border-radius:5px;
-    
-}
-#meatncheese{
-    height:2px;
-    width:100%;
-    background-color:white;
-    border-radius:5px;
-    
-}
-#bottombun{
-    height:2px;
-    width:100%;
-    background-color:white;
-    border-radius:5px;
+
 }
 /* Media Query to hide/unhide mobile hamburger button and the navigation bar. Also
 adjusts the navigation bar and the list to stack vertically in a column instead of
 in a row. */
 
-@media (max-width: 400px) {
+@media (max-width: 650px) {
+    
     .hamburger {
         display:flex;
     }
     .mainnavbar {
-        flex-direction:column;
+        flex-direction:column; 
+    }
+    .navlinks {
+        display:none;
+        width:100%;
         
     }
     .navlinks ul{
+        width:100%;
         flex-direction:column;
     }
-    
-    
+    .navlinks li{
+        text-align:center;
+    }
+    .navlinks li a{
+        padding:.5rem;
+    }
+    .navlinks.active{
+        display:flex;
+        
+        
+    }
 }
 
 
