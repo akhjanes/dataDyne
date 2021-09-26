@@ -51,7 +51,13 @@ body{
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-
+#company-slogan{
+    font-size: 21px;
+    margin-bottom: 10px;
+    background: linear-gradient(rgb(69, 128, 67),#fdfdfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
 
 /* Navigation Bar Links  */
 
@@ -86,44 +92,60 @@ body{
 a class here but I might want to animate the individual bars later on */
 .hamburger{
     position:absolute;
-    top:.50rem;
-    right:1rem;
+    top:2rem;
+    right:2rem;
     flex-direction:column;
     display:none;
-    justify-content:space-between;
-    width: 35px;
-    height: 21px;
+    justify-content:space-evenly;
+    width: 27px;
+    height: 25px;
 }
 
 #topbun{
-    height:3px;
-    width:75%;
+    height:2px;
+    width:100;
     background-color:white;
-    border-radius:15px;
+    border-radius:5px;
     
 }
 #lettuce{
-    height:3px;
-    width:75%;
+    height:2px;
+    width:100;
     background-color:white;
-    border-radius:15px;
+    border-radius:5px;
     
 }
 #meatncheese{
-    height:3px;
-    width:75%;
+    height:2px;
+    width:100%;
     background-color:white;
-    border-radius:15px;
+    border-radius:5px;
     
 }
 #bottombun{
-    height:3px;
-    width:75%;
+    height:2px;
+    width:100%;
     background-color:white;
-    border-radius:15px;
+    border-radius:5px;
+}
+/* Media Query to hide/unhide mobile hamburger button and the navigation bar. Also
+adjusts the navigation bar and the list to stack vertically in a column instead of
+in a row. */
+
+@media (max-width: 400px) {
+    .hamburger {
+        display:flex;
+    }
+    .mainnavbar {
+        flex-direction:column;
+        
+    }
+    .navlinks ul{
+        flex-direction:column;
+    }
+    
     
 }
-
 
 
 /*  */
