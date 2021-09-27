@@ -8,9 +8,11 @@ The plan for this project is to build a landing website for a fictional mega cor
 
 The plan is to design something sleak with good menu functionality, a parallax effect on one (or more) of the pages, good scalability and of course some javascript features. I will also include a hamburger menu for mobile, because I hear hamburgers are pretty tasty these days. The first phase will be to build a basic, clean website with the navigation bar built in, with links to the extra pages for some of the products.
 
-I have found that commenting out everything for organization helps my thought process with things, so expect a LOT of comments. 
+I have found that commenting out for organization helps my thought process with things, so expect a LOT of comments. 
 
+Part 2: Navigation bar is complete 
 
+Next I want to build the index, copy the footer and possibly some other content over to the other pages to get them rolling. After I'm satisfied with the index, I want to start implementing some cool stuff on each page to hit the project requirements. 
 
 
 

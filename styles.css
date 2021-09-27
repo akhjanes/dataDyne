@@ -3,6 +3,7 @@
 
 font-family: 'Gemunu Libre', sans-serif;
 font-family: 'Stick No Bills', sans-serif;
+font-family: 'Poppins', sans-serif;
 
 
 
@@ -12,7 +13,7 @@ All */
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family: 'Gemunu Libre', sans-serif;
+    text-decoration:none;
 }
 
 
@@ -21,16 +22,61 @@ All */
 /* Body */
 
 body.index{
-    background: linear-gradient(rgba(133, 132, 132, 0.01),#6b6a6a), url(images/main-background.jpg); 
+    background: url(images/main-background.jpg); 
     background-size: cover;
     background-position: absolute;
     height:100vh;
 }
+.index-content-top{
+    font-family: 'Poppins', sans-serif;
+    position:absolute;
+    display:flex;
+    flex-direction:column;
+    top:45%;
+    left:50%;
+    text-align:center;
+    transform: translate(-50%, -50%);
+    color:black;
+    border-radius:15px;
+}
+.index-content-top h1{
+    font-size:30px;
+}
+.index-content-top p{
+    text-decoration:none;
+    margin:15px 0 30px;
+    font-size:20px;
+}
+.index-content-top p a{
+    text-decoration:none;
+    text-transform:bold;
+}
+.view-bestseller-btn{
+    text-decoration:none;
+    border:3px solid black;
+    padding:5px;
+    font-size:15px;
+    background:transparent;
+    border-radius:1px;
+    cursor:pointer;
+    transition: all 0.5s ease 0s;
+}
+.view-bestseller-btn:hover{
+    text-decoration:none;
+    border:3px solid rgb(88, 88, 88);
+    background:rgb(0, 0, 0);
+    transition:1s;
+}
+.index-content-top a:hover{
+    text-decoration:none;
+    color:white;
+}
 body.k7body{
-    background: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
+    background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
     background-size: cover;
     background-position: absolute;
     height:100vh;
+    
 }
 div#k7-avenger-render{
     margin-left:500px;
@@ -41,17 +87,17 @@ div#k7-avenger-render{
     border:5px rgb(26, 26, 26) solid;
     
 }
-}
+
 body.shielding{
-    background: linear-gradient(rgba(179, 179, 179, 0.2),#080101), url(images/G5.jpg); 
+    background:url(images/G5.jpg); 
     background-size: cover;
-    background-position: center;
+    background-position: absolute;
     height:100vh;
 }
 body.sapients{
-    background: linear-gradient(rgba(58, 58, 58, 0.2),#131313), url(images/cassandra.jpg); 
+    background: url(images/cassandra.jpg); 
     background-size: cover;
-    background-position: center;
+    background-position: absolute;
     height:100vh;
 }
 
@@ -72,30 +118,35 @@ body.sapients{
     box-shadow:black 1px 1px 1px 1px;
 }
 
-/* Navigtion Bar Company Name "dataDyne" +*/
+/* Navigtion Bar dataDyne Logo Image +*/
+
 #company-logo{
     content:url(images/mainLogo.png);
-    width:120px;
-    height:120px;    
+    width:100px;
+    height:100px;    
 }
 
-.company-name{
+/* Styling for individual name / slogan matching backgrounds
+INDEX +*/
+
+#company-slogan-index{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(rgb(66, 66, 66),#d8d8d8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.company-name-index{
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
     font-weight: bold;
     font-size: 45px;
-    background: linear-gradient(rgba(155, 255, 255, 0.3),#ffffff);
+    background: linear-gradient(rgba(179, 177, 177, 0.3),#e4e5e6);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-
-
-#company-slogan{
-    font-size: 21px;
-    background: linear-gradient(rgb(69, 128, 67),#fdfdfd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-}
+/* Styling for individual name / slogan matching backgrounds
+k7 +*/
 .company-name-k7{
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
@@ -105,11 +156,47 @@ body.sapients{
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-
-
 #company-slogan-k7{
-    font-size: 21px;
-    background: linear-gradient(rgb(23, 160, 179),#fdfdfd);
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(rgb(139, 126, 9),#fdfdfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+/* Styling for individual name / slogan matching backgrounds
+sapients +*/
+#company-slogan-sapients{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(rgb(212, 107, 8),#fdfdfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.company-name-sapients{
+    margin: 1rem;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: linear-gradient(rgba(255, 123, 0, 0.3),#caaaa6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+/* Styling for individual name / slogan matching backgrounds
+shielding +*/
+
+.company-name-shielding{
+    margin: 1rem;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    background: linear-gradient(rgba(230, 13, 13, 0.3),#808283);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+#company-slogan-shielding{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 30px;
+    background: linear-gradient(rgb(179, 23, 23),#fdfdfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
@@ -137,7 +224,7 @@ body.sapients{
 }
 /* Navigation Links Animations  */
 
-}
+
 .navlinks {
     cursor:pointer;
 }
@@ -146,9 +233,23 @@ body.sapients{
 }
 .navlinks li a:hover {
     color:black;
-    
 }
-/* The idea here is to hide the hamburger when the screen size is large enough*/
+/* Adding a white line animation under link hover */
+
+.navlinks ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: white;
+    display:block;
+    margin:auto;
+    transition:0.3s;
+}
+.navlinks ul li:hover::after{
+    width:75%;
+}
+    
+/* Hide the hamburger when the screen size is beyond mobile */
 .hamburger{
     position:absolute;
     top:2rem;
@@ -172,7 +273,7 @@ adjusts the navigation bar and the list to stack vertically in a column instead 
 in a row. */
 
 @media (max-width: 650px) {
-    
+     
     .hamburger {
         display:flex;
     }
@@ -205,13 +306,73 @@ in a row. */
     .navlinks.active{
         display:flex;
     }
+    /* Adjust white line under links when it is mobile size */
+    .navlinks ul li::after{
+        content: '';
+        width:0%;
+        height: 2px;
+        background: white;
+        display:block;
+        margin:auto;
+        transition:0.3s;
+    }
+    .navlinks ul li:hover::after{
+        width:65px;
+    }
+    /* Have to change the color on the nav menu drop down because the gradient looks terrible on mobile */
+    .navlinks {
+            cursor:pointer;
+        }
+        .navlinks li a{
+            transition: all 0.5s ease 0s;
+        }
+        .navlinks li a:hover {
+            color:rgb(180, 178, 178);
+        }
+    /* Remove company logo because it looks terrible on mobile imo */
     #company-logo{
         display:none;
     }
+    .index-content-top{
+        color:white;
+        background:rgb(105, 105, 105);
+        width:100%;
+        margin-top:26%;
+        display:flex;
+        justify-content:space-evenly;
+        padding:25px;
+        align-items:center;
+        background-color:black;
+        background: linear-gradient(rgb(0, 0, 0),#000000);
+        background: linear-gradient(rgb(66, 66, 66),#000000);
+        box-shadow:black 5px 5px 5px 5px;
+    }
+    .index-content-top h1{
+        font-size:25px;
+    }
+    .view-bestseller-btn{
+    text-decoration:none;
+    border:3px solid black;
+    padding:5px;
+    font-size:15px;
+    background:transparent;
+    border-radius:1px;
+    cursor:pointer;
+    transition: all 0.5s ease 0s;
+}
+.view-bestseller-btn:hover{
+    text-decoration:none;
+    border:3px solid rgb(88, 88, 88);
+    background:rgb(212, 212, 212);
+    transition:1s;
+}
+.index-content-top a:hover{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
 }
 
 
-/* k7.html Styles */
+
 /*  */
 /*  */
 /*  */
