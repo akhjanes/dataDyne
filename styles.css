@@ -27,6 +27,7 @@ body.index{
     background-position: absolute;
     height:100vh;
 }
+
 .index-content-top{
     font-family: 'Poppins', sans-serif;
     position:absolute;
@@ -63,13 +64,22 @@ body.index{
 }
 .view-bestseller-btn:hover{
     text-decoration:none;
-    border:3px solid rgb(88, 88, 88);
+    border:3px solid rgb(0, 0, 0);
     background:rgb(0, 0, 0);
     transition:1s;
 }
 .index-content-top a:hover{
     text-decoration:none;
-    color:white;
+    color:rgb(247, 163, 7);
+}
+.index-product-feature h1{
+    padding-top:40px;
+}
+body.featured{
+    background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/elvis.jpg); 
+    background-size: cover;
+    background-position: absolute;
+    height:100vh;
 }
 body.k7body{
     background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
@@ -107,14 +117,14 @@ body.sapients{
 /* Main Nav Bar Parent */
 
 .mainnavbar{
-    display:flex;
+    display:inline-flex;
     color: white;
-    justify-content:space-evenly;
+    width:100%;
+    justify-content:space-around;
     padding:5px;
     align-items:center;
     background-color:black;
-    background: linear-gradient(rgba(255, 255, 255, 1.5),#090514);
-    background: linear-gradient(rgb(149, 147, 155),#000000);
+    background: linear-gradient(rgb(49, 49, 49),#000000);
     box-shadow:black 1px 1px 1px 1px;
 }
 
@@ -131,34 +141,54 @@ INDEX +*/
 
 #company-slogan-index{
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
+    margin-right:10rem;
     background: linear-gradient(rgb(66, 66, 66),#d8d8d8);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
+
 .company-name-index{
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     background: linear-gradient(rgba(179, 177, 177, 0.3),#e4e5e6);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 /* Styling for individual name / slogan matching backgrounds
 k7 +*/
+.company-featured{
+    margin: 1rem;
+    font-family: 'Stick No Bills', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    background: linear-gradient(rgba(197, 197, 197, 0.3),#6497a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+#company-slogan-featured{
+    margin: 1rem;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    background: linear-gradient(rgba(197, 197, 197, 0.3),#a3641b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
 .company-name-k7{
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     background: linear-gradient(rgba(197, 197, 197, 0.3),#6497a7);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 #company-slogan-k7{
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     background: linear-gradient(rgb(139, 126, 9),#fdfdfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -167,7 +197,7 @@ k7 +*/
 sapients +*/
 #company-slogan-sapients{
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     background: linear-gradient(rgb(212, 107, 8),#fdfdfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -176,7 +206,7 @@ sapients +*/
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     background: linear-gradient(rgba(255, 123, 0, 0.3),#caaaa6);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -188,14 +218,14 @@ shielding +*/
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     background: linear-gradient(rgba(230, 13, 13, 0.3),#808283);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
 #company-slogan-shielding{
     font-family: 'Gemunu Libre', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     background: linear-gradient(rgb(179, 23, 23),#fdfdfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
@@ -212,6 +242,7 @@ shielding +*/
 
 .navlinks li{
     list-style:none;
+
 }
 
 .navlinks li a{
@@ -232,7 +263,7 @@ shielding +*/
     transition: all 0.5s ease 0s;
 }
 .navlinks li a:hover {
-    color:black;
+    color:rgb(247, 163, 7);
 }
 /* Adding a white line animation under link hover */
 
@@ -278,15 +309,12 @@ in a row. */
         display:flex;
     }
     .mainnavbar {
-        flex-direction:column;
-        
-    
+        flex-direction:column; 
     }
     .mainnavbar{
         display:flex;
-        color: white;
-        justify-content:left;
         align-items:center;
+        justify-content:center;
     }
     .navlinks {
         display:none;
@@ -337,15 +365,19 @@ in a row. */
         color:white;
         background:rgb(105, 105, 105);
         width:100%;
-        margin-top:26%;
+        margin-top:35%;
         display:flex;
         justify-content:space-evenly;
-        padding:25px;
+        padding-top:5px;
         align-items:center;
         background-color:black;
         background: linear-gradient(rgb(0, 0, 0),#000000);
         background: linear-gradient(rgb(66, 66, 66),#000000);
         box-shadow:black 5px 5px 5px 5px;
+    }
+    .index-product-feature h1{
+        padding-top:40px;
+        
     }
     .index-content-top h1{
         font-size:25px;
