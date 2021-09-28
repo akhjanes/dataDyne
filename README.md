@@ -14,6 +14,8 @@ Part 2: Navigation bar is complete
 
 Next I want to build the index, copy the footer and possibly some other content over to the other pages to get them rolling. After I'm satisfied with the index, I want to start implementing some cool stuff on each page to hit the project requirements. 
 
+I got a little off-track exploring new things. I decided to change up the layout I was going for a bit because I found these really cool 3d models that I could embed into the page, so I want to build a gallery on the featured page. So far it seems cool. On the individual pages, I will have info sections for the products in the main-nav bar, with some parallax stuff. Next task is gonna be to add a footer and some kind of prompt / input field for email newsletter, and add some javascript if the @ symbol or .com isn't detected. 
+
 
 
 
