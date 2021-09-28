@@ -24,7 +24,8 @@ All */
 body.index{
     background: url(images/main-background.jpg); 
     background-size: cover;
-    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height:100vh;
 }
 
@@ -78,25 +79,29 @@ body.index{
 body.featured{
     background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/elvis.jpg); 
     background-size: cover;
-    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height:100vh;
 }
 body.k7body{
     background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
     background-size: cover;
-    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height:100vh;
 }
 body.shielding{
     background:url(images/G5.jpg); 
     background-size: cover;
-    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height:100vh;
 }
 body.sapients{
     background: url(images/cassandra.jpg); 
     background-size: cover;
-    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     height:100vh;
 }
 
@@ -301,12 +306,11 @@ shielding +*/
 }
 .product-feature p{
     font-family: 'Poppins', sans-serif;
-    
+
 }
 .featured-row div{
     justify-content:center;
     display:flex;
-    flex-direction:row;
     width:100%;
     padding:20px;
     font-family: 'Stick No Bills', sans-serif;
