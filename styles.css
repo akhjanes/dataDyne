@@ -321,7 +321,7 @@ shielding +*/
 adjusts the navigation bar and the list to stack vertically in a column instead of
 in a row. */
 
-@media (max-width: 650px) {
+@media (max-width: 375px) {
      
     .hamburger {
         display:flex;
@@ -352,38 +352,29 @@ in a row. */
     .navlinks.active{
         display:flex;
     }
-    /* Adjust white line under links when it is mobile size */
-    .navlinks ul li::after{
-        content: '';
-        width:0%;
-        height: 2px;
-        background: white;
-        display:block;
-        margin:auto;
-        transition:0.3s;
-    }
+    /* Adjust white line under nav links when at 375px */
     .navlinks ul li:hover::after{
-        width:65px;
+        width:80px;
     }
     /* Have to change the color on the nav menu drop down because the gradient looks terrible on mobile */
-    .navlinks {
-            cursor:pointer;
-        }
-        .navlinks li a{
-            transition: all 0.5s ease 0s;
-        }
-        .navlinks li a:hover {
-            color:rgb(180, 178, 178);
-        }
+    /* .navlinks {
+        cursor:pointer;
+    }
+    .navlinks li a{
+        transition: all 0.5s ease 0s;
+    } */
+    .navlinks li a:hover {
+        color:rgb(212, 117, 28);
+     }
     /* Remove company logo because it looks terrible on mobile imo */
     #company-logo{
         display:none;
     }
     .index-content-top{
-        color:white;
+        color:rgb(207, 207, 207);
         background:rgb(105, 105, 105);
         width:100%;
-        margin-top:35%;
+        margin-top:85px;
         display:flex;
         justify-content:space-evenly;
         padding-top:5px;
