@@ -315,6 +315,15 @@ shielding +*/
     font-family: 'Stick No Bills', sans-serif;
 }
 
+/* K7 Avenger page specific CSS */
+
+#k7image {
+    
+}
+
+/* Ipad size media query */
+
+
 @media (max-width: 810px) {
      
     .hamburger {
