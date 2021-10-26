@@ -16,7 +16,6 @@ All */
     text-decoration:none;
 }
 
-
 /* Header */
 
 /* Body */
@@ -316,12 +315,101 @@ shielding +*/
     font-family: 'Stick No Bills', sans-serif;
 }
 
+@media (max-width: 810px) {
+     
+    .hamburger {
+        display:flex;
+    }
+    .mainnavbar {
+        flex-direction:column; 
+    }
+    .mainnavbar{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+    .navlinks {
+        display:none;
+        width:100%;
+        
+    }
+    .navlinks ul{
+        width:100%;
+        flex-direction:column;
+    }
+    .navlinks li{
+        text-align:center;
+    }
+    .navlinks li a{
+        padding:.5rem;
+    }
+    .navlinks.active{
+        display:flex;
+    }
+    /* Adjust white line under nav links when at 810px */
+    .navlinks ul li:hover::after{
+        width:80px;
+    }
+    /* Have to change the color on the nav menu drop down because the gradient looks terrible on mobile */
+     .navlinks {
+        cursor:pointer;
+    }
+    .navlinks li a{
+        transition: all 0.5s ease 0s;
+    } 
+    .navlinks li a:hover {
+        color:rgb(137, 255, 1);
+     }
+    
+    .index-content-top{
+        color:rgb(207, 207, 207);
+        background:rgb(105, 105, 105);
+        width:100%;
+        margin-top:85px;
+        display:flex;
+        justify-content:space-evenly;
+        padding-top:5px;
+        align-items:center;
+        background-color:black;
+        background: linear-gradient(rgb(0, 0, 0),#000000);
+        background: linear-gradient(rgb(66, 66, 66),#000000);
+        box-shadow:black 5px 5px 5px 5px;
+    }
+    .index-product-feature h1{
+        padding-top:40px;
+        
+    }
+    .index-content-top h1{
+        font-size:25px;
+    }
+    .view-bestseller-btn{
+    text-decoration:none;
+    border:3px solid black;
+    padding:5px;
+    font-size:15px;
+    background:transparent;
+    border-radius:1px;
+    cursor:pointer;
+    transition: all 0.5s ease 0s;
+}
+.view-bestseller-btn:hover{
+    text-decoration:none;
+    border:3px solid rgb(88, 88, 88);
+    background:rgb(212, 212, 212);
+    transition:1s;
+}
+.index-content-top a:hover{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+}
 
 /* Media Query to hide/unhide mobile hamburger button and the navigation bar. Also
 adjusts the navigation bar and the list to stack vertically in a column instead of
 in a row. */
 
-@media (max-width: 375px) {
+/* Media query for Iphone 12/13 max Pro */
+
+@media (max-width: 428px) {
      
     .hamburger {
         display:flex;
@@ -357,12 +445,12 @@ in a row. */
         width:80px;
     }
     /* Have to change the color on the nav menu drop down because the gradient looks terrible on mobile */
-    /* .navlinks {
+     .navlinks {
         cursor:pointer;
     }
     .navlinks li a{
         transition: all 0.5s ease 0s;
-    } */
+    } 
     .navlinks li a:hover {
         color:rgb(212, 117, 28);
      }

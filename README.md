@@ -31,7 +31,7 @@ Tonight, Doug and Jef talked a lot about images, best practices and how to appro
 
 
 
-
+As of Oct. 26 I am working on cleaning up the media queries, the site will scale down from 1080 one will be change the layout a bit at the Ipad size 810x, which will remove the inner nav link banner text "datadyne" and its associated page name to allow room for the links to slide over properly, and the last query will be at 375x812 (Iphone 12/13 Pro Max)
 
 
 
