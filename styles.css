@@ -1,5 +1,5 @@
 
-/*Imported Fonts so I don't forget the css for them
+/*           Imported Fonts
 
 font-family: 'Gemunu Libre', sans-serif;
 font-family: 'Stick No Bills', sans-serif;
@@ -7,7 +7,7 @@ font-family: 'Poppins', sans-serif;
 
 
 
-All */
+                All */ 
 
 * {
     box-sizing: border-box;
@@ -16,9 +16,9 @@ All */
     text-decoration:none;
 }
 
-/* Header */
+              /* Header */
 
-/* Body */
+               /* Body */
 
 body.index{
     background: url(images/main-background.jpg); 
@@ -105,9 +105,9 @@ body.sapients{
 }
 
 
-/* Navigation Bar */
+                /* Navigation Bar */
 
-/* Main Nav Bar Parent */
+                /* Main Nav Bar Parent */
 
 .mainnavbar{
     display:inline-flex;
@@ -121,7 +121,7 @@ body.sapients{
     box-shadow:black 1px 1px 1px 1px;
 }
 
-/* Navigtion Bar dataDyne Logo Image +*/
+             /* Navigtion Bar dataDyne Logo Image +*/
 
 #company-logo{
     content:url(images/mainLogo.png);
@@ -129,8 +129,8 @@ body.sapients{
     height:100px;    
 }
 
-/* Styling for individual name / slogan matching backgrounds
-INDEX +*/
+          /* Styling for individual name / slogan matching backgrounds
+                      INDEX +*/
 
 #company-slogan-index{
     font-family: 'Gemunu Libre', sans-serif;
@@ -150,8 +150,8 @@ INDEX +*/
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-/* Styling for individual name / slogan matching backgrounds
-k7 +*/
+            /* Styling for individual name / slogan matching backgrounds
+                        k7 +*/
 .company-featured{
     margin: 1rem;
     font-family: 'Stick No Bills', sans-serif;
@@ -186,8 +186,8 @@ k7 +*/
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-/* Styling for individual name / slogan matching backgrounds
-sapients +*/
+             /* Styling for individual name / slogan matching backgrounds
+                     sapients +*/
 #company-slogan-sapients{
     font-family: 'Gemunu Libre', sans-serif;
     font-size: 40px;
@@ -204,8 +204,8 @@ sapients +*/
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-/* Styling for individual name / slogan matching backgrounds
-shielding +*/
+                /* Styling for individual name / slogan matching backgrounds
+                    shielding +*/
 
 .company-name-shielding{
     margin: 1rem;
@@ -224,7 +224,7 @@ shielding +*/
     -webkit-text-fill-color:transparent;
 }
 
-/* Navigation Bar Links  */
+                    /* Navigation Bar Links  */
 
 .navlinks ul{
     margin:0;
@@ -246,7 +246,7 @@ shielding +*/
     
     
 }
-/* Navigation Links Animations  */
+                /* Navigation Links Animations  */
 
 
 .navlinks {
@@ -258,7 +258,7 @@ shielding +*/
 .navlinks li a:hover {
     color:rgb(247, 163, 7);
 }
-/* Adding a white line animation under link hover */
+            /* White line animation under link hover */
 
 .navlinks ul li::after{
     content: '';
@@ -273,7 +273,7 @@ shielding +*/
     width:75%;
 }
     
-/* Hide the hamburger when the screen size is beyond mobile */
+            /* Hide the hamburger icon when the screen size is beyond mobile */
 .hamburger{
     position:absolute;
     top:2rem;
@@ -292,7 +292,7 @@ shielding +*/
     border-radius:5px;
 }
 
-/* Indext Featured Text Section */
+                    /* Index Featured Text Section */
 .product-feature{
     padding:15px;
     margin-top:55px;
@@ -315,11 +315,37 @@ shielding +*/
     font-family: 'Stick No Bills', sans-serif;
 }
 
-/* K7 Avenger page specific CSS */
+                /* K7 Avenger page specific CSS */
 
-#k7image {
-    
+.k7image {
+    align-items: center;
+    margin-left: 20%;
+    margin-top: 10%;
+    border: black 5px;
+    padding:15px;
+
 }
+
+/* Featured Page CSS */
+
+.image-gallery {
+    width:50%;
+    border:20px solid black;
+    margin:auto;
+    overflow:hidden;
+}
+
+.image-slide {
+    display:flex;
+    width:100%;
+    height:100%;
+
+}
+
+
+
+
+
 
 /* Ipad size media query */
 
