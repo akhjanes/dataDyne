@@ -105,6 +105,7 @@ body.sapients{
 }
 
 
+
                 /* Navigation Bar */
 
                 /* Main Nav Bar Parent */
@@ -325,22 +326,16 @@ body.sapients{
     padding:15px;
 
 }
+/* Footer for every page */
 
+.footer {
+    size:100px;
+    display:flex;
+    justify-content: center;
+}
 /* Featured Page CSS */
 
-.image-gallery {
-    width:50%;
-    border:20px solid black;
-    margin:auto;
-    overflow:hidden;
-}
 
-.image-slide {
-    display:flex;
-    width:100%;
-    height:100%;
-
-}
 
 
 
@@ -351,6 +346,20 @@ body.sapients{
 
 
 @media (max-width: 810px) {
+    #k7-image-feeatured{
+        width:75px;
+    
+    }
+    .image-gallery{
+        width:75%;
+        border:5px solid black;
+        overflow:hidden;
+        padding:0px;
+        margin:auto;
+        margin-bottom:0px;
+
+    }
+    
      
     .hamburger {
         display:flex;
@@ -437,6 +446,10 @@ body.sapients{
     text-decoration:none;
     color:rgb(0, 0, 0);
 }
+
+/* Featured Page Change Image Sizes */
+
+
 
 /* Media Query to hide/unhide mobile hamburger button and the navigation bar. Also
 adjusts the navigation bar and the list to stack vertically in a column instead of
@@ -534,11 +547,16 @@ in a row. */
     text-decoration:none;
     color:rgb(0, 0, 0);
 }
-
+.product-feature{
+    font-size:25px;
+}
+.image-gallery{
+    width: 100%;
+    height: auto;
 
 }
 
-
+}
 
 
 /*  */
