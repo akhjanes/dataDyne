@@ -6,3 +6,6 @@ adds an event listener for a click and then toggles it active or inactive. It's 
 let navlinks  =  document.getElementsByClassName('navlinks')[0]
 let hamburger =  document.getElementsByClassName('hamburger')[0]
 hamburger.addEventListener('click', function(){ navlinks.classList.toggle('active')})
+
+/* Image slider */
+

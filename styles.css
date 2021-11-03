@@ -5,21 +5,15 @@ font-family: 'Gemunu Libre', sans-serif;
 font-family: 'Stick No Bills', sans-serif;
 font-family: 'Poppins', sans-serif;
 
-
-
-                All */ 
-
+All */ 
 * {
     box-sizing: border-box;
     margin:0;
     padding:0;
     text-decoration:none;
 }
-
-              /* Header */
-
-               /* Body */
-
+/* Header */
+/* Home Page + Navigation Bar for All Pages */
 body.index{
     background: url(images/main-background.jpg); 
     background-size: cover;
@@ -27,7 +21,6 @@ body.index{
     background-attachment: fixed;
     height:100vh;
 }
-
 .index-content-top{
     font-family: 'Poppins', sans-serif;
     position:absolute;
@@ -82,13 +75,7 @@ body.featured{
     background-attachment: fixed;
     height:100vh;
 }
-body.k7body{
-    background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height:100vh;
-}
+
 body.shielding{
     background:url(images/G5.jpg); 
     background-size: cover;
@@ -104,12 +91,17 @@ body.sapients{
     height:100vh;
 }
 
+/* K7 Page Specific*/
+body.k7body{
+    background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
+}
 
-
-                /* Navigation Bar */
-
-                /* Main Nav Bar Parent */
-
+/* Navigation Bar */
+/* Main Nav Bar Parent */
 .mainnavbar{
     display:inline-flex;
     color: white;
@@ -121,17 +113,14 @@ body.sapients{
     background: linear-gradient(rgb(49, 49, 49),#000000);
     box-shadow:black 1px 1px 1px 1px;
 }
-
-             /* Navigtion Bar dataDyne Logo Image +*/
-
+/* Navigtion Bar dataDyne Logo Image +*/
 #company-logo{
     content:url(images/mainLogo.png);
     width:100px;
     height:100px;    
 }
-
-          /* Styling for individual name / slogan matching backgrounds
-                      INDEX +*/
+/* Styling for individual name / slogan matching backgrounds
+INDEX +*/
 
 #company-slogan-index{
     font-family: 'Gemunu Libre', sans-serif;
@@ -329,9 +318,15 @@ body.sapients{
 /* Footer for every page */
 
 .footer {
-    size:100px;
+    position:relative;
+    margin-top:700px;
     display:flex;
-    justify-content: center;
+    align-items:center;
+    justify-content:center;
+    padding:5px;
+}
+.footer a{
+    padding:5px;
 }
 /* Featured Page CSS */
 
@@ -547,14 +542,7 @@ in a row. */
     text-decoration:none;
     color:rgb(0, 0, 0);
 }
-.product-feature{
-    font-size:25px;
-}
-.image-gallery{
-    width: 100%;
-    height: auto;
 
-}
 
 }
 
