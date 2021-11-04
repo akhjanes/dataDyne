@@ -35,6 +35,9 @@ As of Oct. 26 I am working on cleaning up the media queries, the site will scale
 
 So it's november 3rd and we have just a few weeks left. The plan is to implement the javascript for an image slider and I think I have all the requirements met. I trimmed the site down quite a bit just to focus on certain things, deleted a few pages that I was going to build but won't have time for at this point. I think I am going to follow along with the w3 schools image slider and adapt it to my needs.
 
+Things left to do: Add JS newsletter type box into footer.
+                   Adjust media query to remove image gallery and instead just display the images
+                   in a column down the page. 
 
 
 

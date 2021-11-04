@@ -241,19 +241,17 @@ INDEX +*/
 
 .footer {
     
-    margin-top:700px;
+    
     display:flex;
     align-items:center;
     justify-content:center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   
     
 }
-.footer a{
-    padding:5px;
-    margin-top:20%;
-    
-    
-    
-}
+
 /* Featured Page CSS */
 /* Featured Page Image Gallery */
 
@@ -346,86 +344,74 @@ INDEX +*/
 
 
 /* Ipad size media query */
-
-
 @media (max-width: 810px) {
     
-    .image-gallery{
-        width:75%;
-        border:5px solid black;
-        overflow:hidden;
-        padding:0px;
-        margin:auto;
-        margin-bottom:0px;
-
-    }
-    
      
-    .hamburger {
-        display:flex;
-    }
-    .mainnavbar {
-        flex-direction:column; 
-    }
-    .mainnavbar{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-    }
-    .navlinks {
-        display:none;
-        width:100%;
+.hamburger {
+    display:flex;
+}
+.mainnavbar {
+    flex-direction:column; 
+}
+.mainnavbar{
+     display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.navlinks {
+    display:none;
+    width:100%;
         
-    }
-    .navlinks ul{
-        width:100%;
-        flex-direction:column;
-    }
-    .navlinks li{
-        text-align:center;
-    }
-    .navlinks li a{
-        padding:.5rem;
-    }
-    .navlinks.active{
-        display:flex;
-    }
+}
+.navlinks ul{
+    width:100%;
+    flex-direction:column;
+}
+.navlinks li{
+    text-align:center;
+}
+.navlinks li a{
+    padding:.5rem;
+}
+.navlinks.active{
+    display:flex;
+}
     /* Adjust white line under nav links when at 810px */
-    .navlinks ul li:hover::after{
-        width:80px;
-    }
+.navlinks ul li:hover::after{
+    width:80px;
+}
     /* Have to change the color on the nav menu drop down because the gradient looks terrible on mobile */
-     .navlinks {
-        cursor:pointer;
-    }
-    .navlinks li a{
-        transition: all 0.5s ease 0s;
-    } 
-    .navlinks li a:hover {
-        color:rgb(137, 255, 1);
-     }
+.navlinks {
+    cursor:pointer;
+}
+.navlinks li a{
+    transition: all 0.5s ease 0s;
+} 
+.navlinks li a:hover {
+    color:rgb(137, 255, 1);
+}
     
-    .index-content-top{
-        color:rgb(207, 207, 207);
-        background:rgb(105, 105, 105);
-        width:100%;
-        margin-top:85px;
-        display:flex;
-        justify-content:space-evenly;
-        padding-top:5px;
-        align-items:center;
-        background-color:black;
-        background: linear-gradient(rgb(0, 0, 0),#000000);
-        background: linear-gradient(rgb(66, 66, 66),#000000);
-        box-shadow:black 5px 5px 5px 5px;
-    }
-    .index-product-feature h1{
-        padding-top:40px;
+.index-content-top{
+    color:rgb(207, 207, 207);
+    background:rgb(105, 105, 105);
+    width:100%;
+    margin-top:85px;
+    display:flex;
+    justify-content:space-evenly;
+    padding-top:5px;
+    align-items:center;
+    background-color:black;
+    background: linear-gradient(rgb(0, 0, 0),#000000);
+    background: linear-gradient(rgb(66, 66, 66),#000000);
+    box-shadow:black 5px 5px 5px 5px;
+}
+.index-product-feature h1{
+    padding-top:40px;
         
-    }
-    .index-content-top h1{
-        font-size:25px;
-    }
+}
+.index-content-top h1{
+    font-size:25px;
+}
     .view-bestseller-btn{
     text-decoration:none;
     border:3px solid black;
@@ -445,6 +431,28 @@ INDEX +*/
 .index-content-top a:hover{
     text-decoration:none;
     color:rgb(0, 0, 0);
+}
+.footer {
+    
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: linear-gradient(rgba(197, 197, 197, 0.3),#6497a7);
+    border:black 3px solid;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   
+    
+}
+.footer a{
+    padding:0px;
+    margin-top:5px;
+    
+    
+    
+    
 }
 
 /* Image Gallery Slider for 810*/
@@ -502,7 +510,7 @@ in a row. */
         transition: all 0.5s ease 0s;
     } 
     .navlinks li a:hover {
-        color:rgb(212, 117, 28);
+        color:rgb(0, 0, 0);
      }
     /* Remove company logo because it looks terrible on mobile imo */
     #company-logo{
