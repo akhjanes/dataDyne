@@ -69,36 +69,16 @@ body.index{
     padding-top:40px;
 }
 body.featured{
-    background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/elvis.jpg); 
+    background-image: linear-gradient(rgba(230, 220, 220, 0.2),#a1b6c7), url(images/Joana.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height:100vh;
 }
 
-body.shielding{
-    background:url(images/G5.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height:100vh;
-}
-body.sapients{
-    background: url(images/cassandra.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height:100vh;
-}
 
-/* K7 Page Specific*/
-body.k7body{
-    background-image: linear-gradient(rgba(192, 192, 192, 0.2),#000000), url(images/Joana.jpg); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height:100vh;
-}
+
+
 
 /* Navigation Bar */
 /* Main Nav Bar Parent */
@@ -160,59 +140,10 @@ INDEX +*/
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
 }
-.company-name-k7{
-    margin: 1rem;
-    font-family: 'Stick No Bills', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    background: linear-gradient(rgba(197, 197, 197, 0.3),#6497a7);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-}
-#company-slogan-k7{
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 40px;
-    background: linear-gradient(rgb(139, 126, 9),#fdfdfd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-}
-             /* Styling for individual name / slogan matching backgrounds
-                     sapients +*/
-#company-slogan-sapients{
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 40px;
-    background: linear-gradient(rgb(212, 107, 8),#fdfdfd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-}
-.company-name-sapients{
-    margin: 1rem;
-    font-family: 'Stick No Bills', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    background: linear-gradient(rgba(255, 123, 0, 0.3),#caaaa6);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-}
-                /* Styling for individual name / slogan matching backgrounds
-                    shielding +*/
 
-.company-name-shielding{
-    margin: 1rem;
-    font-family: 'Stick No Bills', sans-serif;
-    font-weight: bold;
-    font-size: 40px;
-    background: linear-gradient(rgba(230, 13, 13, 0.3),#808283);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-}
-#company-slogan-shielding{
-    font-family: 'Gemunu Libre', sans-serif;
-    font-size: 40px;
-    background: linear-gradient(rgb(179, 23, 23),#fdfdfd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
-}
+
+
+
 
                     /* Navigation Bar Links  */
 
@@ -305,32 +236,109 @@ INDEX +*/
     font-family: 'Stick No Bills', sans-serif;
 }
 
-                /* K7 Avenger page specific CSS */
 
-.k7image {
-    align-items: center;
-    margin-left: 20%;
-    margin-top: 10%;
-    border: black 5px;
-    padding:15px;
-
-}
 /* Footer for every page */
 
 .footer {
-    position:relative;
+    
     margin-top:700px;
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:5px;
+    
 }
 .footer a{
     padding:5px;
+    margin-top:20%;
+    
+    
+    
 }
 /* Featured Page CSS */
+/* Featured Page Image Gallery */
 
+.gallery-container{
+    border:black 3px solid;
+    max-width:50%;
+    position: relative;
+    margin:auto;
+    margin-top:2%;
+}
+.fader {
+    display:hidden;
+}
+.back, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
 
+.next {
+    right:0;
+    border-radius: 3px 0 0 5px;
+
+}
+.back:hover, .next:hover {
+    background-color: rgba(250, 79, 0, 0.918);
+}
+
+.image-text {
+    color: #1f303d;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 45px;
+    padding: 15px 10px;
+    position: relative;
+    text-align:center;
+}
+.textnumber {
+    color:rgb(8, 8, 8);
+    font-size:15px;
+    padding:5px 5px;
+    position:absolute;
+    top:0;
+}
+.circle{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 22px 22px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition:background-color 0.6s ease;
+}
+.active, .circle:hover{
+    background-color: #c57103;
+}
+.allImages{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.fader{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fader{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fader{
+    from {opacity: .4}
+    to {opacity: 1}
+}
 
 
 
@@ -341,10 +349,7 @@ INDEX +*/
 
 
 @media (max-width: 810px) {
-    #k7-image-feeatured{
-        width:75px;
     
-    }
     .image-gallery{
         width:75%;
         border:5px solid black;
@@ -441,6 +446,8 @@ INDEX +*/
     text-decoration:none;
     color:rgb(0, 0, 0);
 }
+
+/* Image Gallery Slider for 810*/
 
 /* Featured Page Change Image Sizes */
 

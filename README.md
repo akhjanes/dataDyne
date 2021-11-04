@@ -33,7 +33,7 @@ Tonight, Doug and Jef talked a lot about images, best practices and how to appro
 
 As of Oct. 26 I am working on cleaning up the media queries, the site will scale down from 1080 one will be change the layout a bit at the Ipad size 810x, which will remove the inner nav link banner text "datadyne" and its associated page name to allow room for the links to slide over properly, and the last query will be at 375x812 (Iphone 12/13 Pro Max) --- also added images for footer links. Added an image to k7 page to start filling out the content for the pages. 
 
-
+So it's november 3rd and we have just a few weeks left. The plan is to implement the javascript for an image slider and I think I have all the requirements met. I trimmed the site down quite a bit just to focus on certain things, deleted a few pages that I was going to build but won't have time for at this point. I think I am going to follow along with the w3 schools image slider and adapt it to my needs.
 
 
 
@@ -49,3 +49,9 @@ Bubble-shield render from: https://www.deviantart.com/xinfectionx/art/Halo-Onlin
 Sick Nasty Vector Art Backgrounds from: https://www.123freevectors.com
 Other assets include original game art from the original box. (Rare)
 Main logo design referenced from Rare art, created wtih Paint 3D from Microsoft.
+
+
+
+
+
+

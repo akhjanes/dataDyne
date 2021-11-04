@@ -33,35 +33,67 @@
     </nav>
 </header>
 <body class="featured">
-    <div class="image-gallery">
-        <div class="image-slide">
-            <a href="k7.html"target="_blank"><img src="images/k7Avenger.png" alt="K7 Avenger Threat Detector"></a>
-            <img src="images/mine-tech.jpg" alt="Fun for Everyone">
-            <a href="shielding.html"target="_blank"><img src="images/shield1.png" alt="Bubble Shield"></a>
-            <img src="images/Rcp180.jpg" alt="RCP 180">
-            <img src="images/magsec.jpg" alt="MagSec 4">
-            <img src="images/falcon2.jpg" alt="Falcon 2">
-            <a href="sapients.html"target="_blank"><img src="images/drcaroll.jpg" alt="Dr. Caroll"></a>
-
-
+    <div class="gallery-container">
+        <div class="allImages fader">
+            <div class="textnumber">1 / 8</div>
+            <img src="images/k7Avenger.png" style="width:100%">
+            <div class="image-text">k7 Avenger. All new threat-detection HUD integration.</div>
         </div>
-    </div>
-    <button id="back-button">Back</button>
-    <button id="forward-button">Forward</button>
-
-    <section class="product-feature">
-            <h1>Precision, perfection.</h1>
-                <p>View our upcoming products below - in 3D.</p>
-    </section>
-    <section>
-        <div class="featured-row">
-            <div class="sketchfab-embed-wrapper"> <iframe title="Energy Cube" frameborder="1" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/00424fdc0b3a4689ad52b73fdbc0a944/embed?ui_theme=dark"> </iframe></div>
-            <div class="sketchfab-embed-wrapper"> <iframe title="Assault Weapon" frameborder="1" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/8d27ad20922d43d3a9f14d14859eec46/embed"> </iframe></div>
-            <div class="sketchfab-embed-wrapper"> <iframe title="Falcon 2" frameborder="1" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/0e48c6a001564823b14e9cfb091c20e6/embed"> </iframe></div>
-            <div class="sketchfab-embed-wrapper"> <iframe title="Mines" frameborder="1" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/491818b49f394bd9b9dcb69ba0866f1b/embed"> </iframe></div>
-        
+        <div class="allImages fader">
+            <div class="textnumber">2 / 8</div>
+            <img src="images/shotgun.jpg" style="width:100%">
+            <div class="image-text">Attachments available.</div>
         </div>
-    </section>
+        <div class="allImages fader">
+            <div class="textnumber">3 / 8</div>
+            <img src="images/combatknives.png" style="width:100%">
+            <div class="image-text">When conventional weapons fail, break out the knives.</div>
+        </div>
+        <div class="allImages fader">
+            <div class="textnumber">4 / 8</div>
+            <img src="images/k7plain.jpg" style="width:100%">
+            <div class="image-text">K7 Light-weight Prototype</div>
+        </div>
+        <div class="allImages fader">
+            <div class="textnumber">5 / 8</div>
+            <img src="images/kit.jpg" style="width:100%">
+            <div class="image-text">The classic for corporate protection. Full kits available.</div>
+        </div>
+        <div class="allImages fader">
+            <div class="textnumber">6 / 8</div>
+            <img src="images/dragon.jpg" style="width:100%">
+            <div class="image-text">The classic Dragon. Proximity explosions. Boom.</div>
+        </div>
+        <div class="allImages fader">
+            <div class="textnumber">7 / 8</div>
+            <img src="images/drcaroll.jpg" style="width:100%">
+            <div class="image-text">Introducing Dr. Caroll. The worlds first true AI.</div>
+        </div>
+        <div class="allImages fader">
+            <div class="textnumber">8 / 8</div>
+            <img src="images/Rcp180.jpg" style="width:100%">
+            <div class="image-text">The RCP 180. Optional cloaking technology available!</div>
+        </div>
+
+        <a class="back" onclick="moveImage(-1)">&#10094</a>
+        <a class="next" onclick="moveImage(1)">&#10095</a>
+        </div>
+    <div style="text-align:center">
+        <span class="circle" onclick="currentImage(1)"></span>
+        <span class="circle" onclick="currentImage(2)"></span>
+        <span class="circle" onclick="currentImage(3)"></span>
+        <span class="circle" onclick="currentImage(4)"></span>
+        <span class="circle" onclick="currentImage(5)"></span>
+        <span class="circle" onclick="currentImage(6)"></span>
+        <span class="circle" onclick="currentImage(7)"></span>
+        <span class="circle" onclick="currentImage(8)"></span>
+    </div>   
+    
+
+    
+    
+
+    
     
 </body>
 <footer>
