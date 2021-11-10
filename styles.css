@@ -255,6 +255,8 @@ INDEX +*/
 /* Featured Page CSS */
 /* Featured Page Image Gallery */
 
+@media(min-width: 1080px){
+
 .gallery-container{
     border:black 3px solid;
     max-width:50%;
@@ -318,26 +320,26 @@ INDEX +*/
     background-color: #c57103;
 }
 .allImages{
-    -webkit-animation-name: fade;
+    -webkit-animation-name: fader;
     -webkit-animation-duration: 1.5s;
-    animation-name: fade;
+    animation-name: fader;
     animation-duration: 1.5s;
 }
 .fader{
-    -webkit-animation-name: fade;
+    -webkit-animation-name: fader;
     -webkit-animation-duration: 1.5s;
-    animation-name: fade;
+    animation-name: fader;
     animation-duration: 1.5s;
 }
 @-webkit-keyframes fader{
-    from {opacity: .4}
+    from {opacity: .10}
     to {opacity: 1}
 }
 @keyframes fader{
-    from {opacity: .4}
+    from {opacity: .10}
     to {opacity: 1}
 }
-
+}
 
 
 
@@ -345,29 +347,29 @@ INDEX +*/
 
 /* Ipad size media query */
 @media (max-width: 810px) {
-    
+
      
-.hamburger {
+    .hamburger {
     display:flex;
 }
-.mainnavbar {
+    .mainnavbar {
     flex-direction:column; 
 }
-.mainnavbar{
+    .mainnavbar{
      display:flex;
     align-items:center;
     justify-content:center;
 }
-.navlinks {
+    .navlinks {
     display:none;
     width:100%;
         
 }
-.navlinks ul{
+    .navlinks ul{
     width:100%;
     flex-direction:column;
 }
-.navlinks li{
+    .navlinks li{
     text-align:center;
 }
 .navlinks li a{
@@ -454,7 +456,7 @@ INDEX +*/
     
     
 }
-
+}
 /* Image Gallery Slider for 810*/
 
 /* Featured Page Change Image Sizes */
