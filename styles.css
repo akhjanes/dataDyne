@@ -358,7 +358,26 @@ INDEX +*/
 /* Ipad size media query */
 @media (max-width: 810px) {
 
-     
+    .gallery-container{
+        display:none;
+    }
+
+    .gallery-container-ipad{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+    
+    }
+    .gallery-container-ipad p {
+        align-content:center;
+    }
+    
+   
+    .gallery-container-iphone{
+        display:none;
+    }
+    
     .hamburger {
     display:flex;
 }
@@ -481,8 +500,13 @@ in a row. */
 
 @media (max-width: 428px) {
     .gallery-container{
-        display:hide;
+        display:none;
     }
+    .gallery-container-ipad{
+        display:none;
+    }
+    
+
     .hamburger {
         display:flex;
     }
