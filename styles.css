@@ -246,11 +246,9 @@ INDEX +*/
     display:flex;
     align-items:center;
     justify-content:center;
-    position:absolute;
+    position:fixed;
     bottom:0;
     width:100%;
-    height:60px;   
-    padding-top:20px;
 }
 
 /* Featured Page CSS */
@@ -348,6 +346,16 @@ INDEX +*/
 @keyframes fader{
     from {opacity: .10}
     to {opacity: 1}
+}
+.footer {
+    
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    bottom:0;
+    width:100%;
 }
 }
 
@@ -485,7 +493,18 @@ INDEX +*/
     
     
 }
+.footer {
+    
+    
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:fixed;
+    bottom:0;
+    padding:10px;
+    width:100%;
 }
+
 /* Image Gallery Slider for 810*/
 
 /* Featured Page Change Image Sizes */

@@ -33,9 +33,9 @@ Last class for me, working on removing the gallery on ipad / iphone sizes and ch
 Assets: 
 
 Product render art from:   https://www.deviantart.com/everlastingabyss/gallery
-Bubble-shield render from: https://www.deviantart.com/xinfectionx/art/Halo-Online-Bubble-Shield-2-541917621
+
 Sick Nasty Vector Art Backgrounds from: https://www.123freevectors.com
-Other assets include original game art from the original box. (Rare)
+
 Main logo design referenced from Rare art, created wtih Paint 3D from Microsoft.
 
 
