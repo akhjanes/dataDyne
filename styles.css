@@ -256,6 +256,10 @@ INDEX +*/
 
 @media(min-width: 1080px){
 
+    
+
+
+
     .gallery-container-iphone{
         display:none;
     }
@@ -376,7 +380,7 @@ INDEX +*/
         justify-content:center;
     }
     
-    }
+    
     .gallery-container-ipad p {
         align-content:center;
     }
@@ -388,49 +392,49 @@ INDEX +*/
     
     .hamburger {
     display:flex;
-}
+    }
     .mainnavbar {
     flex-direction:column; 
-}
+    }
     .mainnavbar{
      display:flex;
     align-items:center;
     justify-content:center;
-}
+    }
     .navlinks {
     display:none;
     width:100%;
         
-}
+    }
     .navlinks ul{
     width:100%;
     flex-direction:column;
-}
+    }
     .navlinks li{
     text-align:center;
-}
-.navlinks li a{
+    }
+    .navlinks li a{
     padding:.5rem;
-}
-.navlinks.active{
+    }
+    .navlinks.active{
     display:flex;
-}
+    }
     /* Adjust white line under nav links when at 810px */
-.navlinks ul li:hover::after{
+    .navlinks ul li:hover::after{
     width:80px;
-}
+    }
     /* Have to change the color on the nav menu drop down because the gradient looks terrible on mobile */
-.navlinks {
+    .navlinks {
     cursor:pointer;
-}
-.navlinks li a{
+    }
+    .navlinks li a{
     transition: all 0.5s ease 0s;
 } 
-.navlinks li a:hover {
+    .navlinks li a:hover {
     color:rgb(137, 255, 1);
 }
     
-.index-content-top{
+    .index-content-top{
     color:rgb(207, 207, 207);
     background:rgb(105, 105, 105);
     width:100%;
@@ -444,11 +448,10 @@ INDEX +*/
     background: linear-gradient(rgb(66, 66, 66),#000000);
     box-shadow:black 5px 5px 5px 5px;
 }
-.index-product-feature h1{
+    .index-product-feature h1{
     padding-top:40px;
-        
 }
-.index-content-top h1{
+    .index-content-top h1{
     font-size:25px;
 }
     .view-bestseller-btn{
@@ -461,39 +464,17 @@ INDEX +*/
     cursor:pointer;
     transition: all 0.5s ease 0s;
 }
-.view-bestseller-btn:hover{
+    .view-bestseller-btn:hover{
     text-decoration:none;
     border:3px solid rgb(88, 88, 88);
     background:rgb(212, 212, 212);
     transition:1s;
 }
-.index-content-top a:hover{
+    .index-content-top a:hover{
     text-decoration:none;
     color:rgb(0, 0, 0);
 }
-.footer {
-    
-    
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background: linear-gradient(rgba(197, 197, 197, 0.3),#6497a7);
-    border:black 3px solid;
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   
-    
-}
-.footer a{
-    padding:0px;
-    margin-top:5px;
-    
-    
-    
-    
-}
-.footer {
+    .footer {
     
     
     display:flex;
@@ -503,7 +484,7 @@ INDEX +*/
     bottom:0;
     padding:10px;
     width:100%;
-}
+    }
 
 /* Image Gallery Slider for 810*/
 
@@ -524,7 +505,11 @@ in a row. */
     .gallery-container-ipad{
         display:none;
     }
-    
+    .gallery-container-iphone{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
 
     .hamburger {
         display:flex;
@@ -614,9 +599,9 @@ in a row. */
     text-decoration:none;
     color:rgb(0, 0, 0);
 }
-
-
 }
+
+
 
 
 /*  */
